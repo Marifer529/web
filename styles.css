@@ -1,0 +1,393 @@
+
+
+body {
+    font-family:'Courier', monospace;
+
+
+margin: 0;
+padding: 0;
+background: url('fondoimgvec.png') no-repeat center center fixed;
+background-size: cover;
+text-align: center;
+padding-top: 80px; 
+box-sizing: border-box; 
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Courier', monospace;
+background: url('fondoimgvec.png') no-repeat center center fixed;
+background-size: cover;
+text-align: center;
+color: var(--marron-oscuro);
+line-height: 1.6;
+}
+
+/*Encabezado */
+header {
+background-color: var(--naranja-oscuro);
+color: var(--blanco);
+padding: 0px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+}
+
+header h1 {
+font-size: 36px;
+margin: 20px 0; 
+}
+
+/*Introducción */
+.servicios-introduccion {
+padding: 40px 20px; 
+background-color: var(--gris-claro);
+margin-top: 100px; 
+font-size: 1.1rem;
+color: var(--marron);
+border-radius: 8px;
+margin-bottom: 30px; 
+}
+
+.servicios-introduccion p {
+margin: 0;
+}
+
+/*secciones de servicios */
+.servicios-lista {
+padding: 40px 20px; 
+margin: 40px 0; 
+background-color: var(--blanco);
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-lista h2 {
+color: var(--naranja-oscuro);
+font-size: 1.8rem;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+/* Listas dentro de las secciones de servicios */
+.servicios-lista ul {
+list-style-type: none;
+padding: 0;
+}
+
+.servicios-lista ul li {
+font-size: 1.1rem;
+margin: 10px 0;
+color: var(--marron);
+}
+
+
+.cta {
+background-color: var(--naranja-claro);
+padding: 30px;
+margin-top: 30px; /* Aumentado el margen superior */
+border-radius: 10px;
+}
+
+.cta p {
+font-size: 1.2rem;
+color: var(--marron-oscuro);
+margin-bottom: 20px;
+}
+
+.cta-button {
+background-color: var(--naranja-oscuro);
+color: var(--blanco);
+padding: 12px 25px;
+border-radius: 8px;
+text-decoration: none;
+font-size: 1.2rem;
+margin: 10px;
+transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+background-color: var(--naranja-claro);
+color: var(--marron);
+}
+
+/* Pie de página */
+footer {
+background-color: var(--naranja-oscuro);
+color: var(--blanco);
+padding: 20px;
+text-align: center;
+margin-top: 60px; /* Aumentado el margen superior */
+}
+
+footer p {
+font-size: 1rem;
+}
+
+/* Paleta de colores cálidos */
+:root {
+--beige:#ffcc00 ;
+--naranja-claro: #f5ff64;
+--naranja-oscuro: #D98E3B;
+--marron: #000000;
+--marron-oscuro: #0f0901;
+--blanco: #fae363;
+--gris-claro: #fae363;
+}
+
+/* Estilos para el menú de navegación */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #ffcc00; /* Nuevo color de fondo */
+padding: 15px 20px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container img {
+max-height: 70px; /* Ajuste de altura */
+}
+
+.nav-container {
+display: flex;
+}
+
+.nav-menu {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+gap: 15px;
+}
+
+.nav-menu li a {
+text-decoration: none;
+font-size: 18px;
+color: #000000;
+font-weight: bold;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+background-color: #ff9900; /* Cambio de color al pasar el cursor */
+color: #fae363;
+}
+
+@media (max-width: 768px) {
+.nav-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu li {
+    margin-bottom: 10px;
+}
+}
+
+/* Estilos sección hero */
+.hero {
+background-color: #dde032;    /* Fondo  hero */
+padding: 80px 20px;            
+text-align: center;            
+}
+
+.hero h1 {
+font-size: 36px;               /* Tamaño de la fuente del título */
+color: #000000;                   /* Color del texto */
+margin: 20px 0;                /* Margen superior e inferior */
+}
+
+.hero p {
+font-size: 18px;               /* Tamaño de la fuente del párrafo */
+color: #0c0b0b;                /* Color del texto */
+margin: 20px 0;                /* Margen superior e inferior */
+}
+
+.cta-button {
+background-color: #fa5e03;     /* Color de fondo del botón */
+color: #fff;                   /* Color del texto del botón */
+padding: 10px 20px;             /* Espaciado interno del botón */
+text-decoration: none;          /* Elimina el subrayado del enlace */
+border-radius: 5px;             /* Bordes redondeados */
+transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.cta-button:hover {
+background-color: #f7efea;     /* Color del botón al pasar el ratón */
+}
+
+/* Estilos para la sección de dos columnas */
+.two-columns {
+display: flex;                   /* Utiliza flexbox para crear columnas */
+justify-content: space-between;  /* Espacio entre las columnas */
+align-items: center;             /* Alinea verticalmente el contenido */
+padding: 40px 20px;              /* Espaciado interno */
+}
+
+.column-left, .column-right {
+flex: 1;                        /* Cada columna ocupa el mismo espacio */
+padding: 20px;                  /* Espacio interno de las columnas */
+}
+
+.image-container img {
+max-width: 100%;                /* Asegura que la imagen no se salga del contenedor */
+height: auto;                   /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+.nav-container {
+    text-align: center;        /* Centra el menú en pantallas pequeñas */
+    margin-right: 0;           /* Elimina margen derecho */
+}
+
+.nav-menu ul {
+    display: block;            /* Muestra los elementos del menú en bloque (columna) */
+}
+
+.nav-menu ul li {
+    margin-bottom: 15px;       /* Espacio entre elementos en pantallas pequeñas */
+    margin-right: 0;           /* Elimina margen derecho en elementos del menú */
+}
+
+.two-columns {
+    flex-direction: column;    /* Cambia a columna en pantallas pequeñas */
+    align-items: center;       /* Centra el contenido */
+}
+}
+
+/* Estilos generales para la galería */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste flexible */
+gap: 15px;
+justify-content: center;
+}
+
+.gallery-item {
+text-align: center;
+}
+
+.gallery-item img {
+width: 150px;  /* Ancho fijo */
+height: 150px; /* Alto fijo */
+object-fit: cover; /* Recorta la imagen para llenar el espacio */
+border-radius: 8px; /* Bordes redondeados opcionales */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Para dispositivos móviles */
+@media screen and (max-width: 600px) {
+header h1 {
+    font-size: 28px;
+}
+
+.gallery {
+    grid-template-columns: 1fr;
+}
+}
+
+/* Estilos para la sección de contacto */
+.contacto-container {
+width: 90%;
+max-width: 600px;
+background-color: #eed07f; /* Naranja suave */
+padding: 50px;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-container h1 {
+color: #080501; /* Marrón oscuro */
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.contacto-container p {
+color: #eeeceb; 
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form label {
+font-weight: bold;
+color: #000000;
+margin-bottom: 10px; /* Espacio entre el label y el input */
+}
+
+form input, form textarea {
+width: 100%;
+padding: 10px;
+border: 2px solid #4F2C00; /* Naranja oscuro */
+border-radius: 5px;
+margin-bottom: 15px;
+background-color: #f0dbb5; /* Fondo crema */
+font-size: 1rem;
+color: #4F2C00;
+}
+
+button {
+background-color: #fa5e03; /* Naranja cálido */
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+background-color: #A6561B; /* Naranja más oscuro */
+}
+
+.contacto-container a {
+display: inline-block;
+text-decoration: none;
+background-color: #8C4F2B; /* Marrón medio */
+color: white;
+padding: 20px 25px;
+border-radius: 5px;
+margin-top: 20px;
+transition: background-color 0.3s ease;
+}
+
+.contacto-container a:hover {
+background-color: #6D3B00; /* Marrón oscuro */
+}
+
+.logo-container img {
+max-height: 100px; /* Aumentado el tamaño del logo */
+}
+
+

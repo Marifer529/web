@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactanos</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+        <a href="index.html"><img src="imagenes/Logo_La_pape_de_Ime.jpg" alt="Logotipo de La pape de Ime"></a>
+    </div>
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Sección Hero -->
+
+<section class="hero">
+  <div class="hero-content">
+  <h1>📞 ¡Ponte en contacto con nosotros!</h1>
+  <p>Si tienes preguntas o deseas solicitar nuestros servicios, envíanos un mensaje o visítanos.</p>
+</div>
+</section>
+
+  <form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono (opcional):</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+<h2>📍 NUESTRA INFORMACIÓN</h2>
+  
+  <p>📧 CORREO: </p>
+  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"> <span>
+    lapapedeime@gmail.com
+  </span></a>
+  
+  <p>📞 TELÉFONO: 5567517514
+     </p>
+  
+  
+  
+  
+  <p> 📌 DIRECCIÓN: </p>
+            <a href="https://maps.app.goo.gl/fNGpZiBUWaCBfnaX8"><span>
+            Av. Las Rosas, Mz. 13, Lt. 86, Cs. 3, Los Héroes Tecámac, C.P. 55764, Tecámac, México.
+            </span></a>
+    </tr>
+        </span>
+        </a></td>
+    </td>
+ 
+    <p>🕒 HORARIO: Lunes a Viernes, 9:00 AM - 20:00 PM, y Domingo 15:00 PM - 20:00.</p>
+    <a href="index.html">Volver a la página principal</a>
+
+  
+</body>
+</html>
